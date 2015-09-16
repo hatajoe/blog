@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://hatajoe.github.io/blog"
+baseurl = "http://hatajoe.github.io/blog/"
 languageCode = "ja-jp"
 title = "hatajoe"
 theme = "hugo-cactus-theme"
