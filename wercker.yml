@@ -1,0 +1,13 @@
+box: golang
+build:
+  steps:
+    - arjen/hugo-build:
+        version: 0.14
+        theme: hugo-cactus-theme
+        flags: --buildDrafts=true
+deploy:
+  steps:
+    - lukevivier/gh-pages@0.2.1:
+        token: $GIT_TOKEN
+        domain: hatajoe.github.io
+        basedir: public
