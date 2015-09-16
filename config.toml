@@ -13,7 +13,7 @@ theme = "hugo-cactus-theme"
 	# Disable comments by leaving disqusShortname empty
 	disqusShortname = "hatajoe"
 	# Enter your tracking code to enable Google Analytics
-	googleAnalytics = ""
+	googleAnalytics = "UA-67714030-1"
 	enableRSS = true
 
 	# The variables below are optionally too and can be used to
