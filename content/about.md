@@ -21,5 +21,6 @@ Kansai,Japan
 
 ## Talks
 
+2015/11/28 [クローバー流エンジニアチームの作り方](http://www.slideshare.net/yusukehatanaka351/kansai-gamestudy20151128-55702743) @ [関西ゲーム勉強会・2015冬 - 関西ゲーム勉強会 | Doorkeeper](https://ksgs.doorkeeper.jp/events/31863)  
 2015/10/12 [GoでGoのプラグインを書く・・けなかった話](http://go-talks.appspot.com/github.com/hatajoe/go-plugin-example/index.slide#1) @ [第１回 関西golang勉強会 - connpass](http://kug2.connpass.com/event/20497/?utm_campaign=event_message_to_selected_participant&utm_source=notifications&utm_medium=email&utm_content=title_link)  
 2015/04/10 [GitHub+SlackでIssue駆動開発](http://www.slideshare.net/yusukehatanaka351/chiramise) @ [満員御礼【大阪開催】ITベンチャー3社の開発ツール チラ見せ♡ナイト※増席しました！ - connpass](http://devtoolnight.connpass.com/event/12670/)  
