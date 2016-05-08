@@ -12,8 +12,9 @@ title = "about"
 → [🎁](http://www.amazon.co.jp/registry/wishlist/VQLOUIT30ZMN)
 
 # Activity 
-✎ [Hatajoe's blog](https://hatajoe.github.io/blog/)  
-Twitter [@Hatajoe](https://twitter.com/Hatajoe)  
+✎ [hatajoe's blog](https://hatajoe.github.io/blog/)  
+Twitter [@hatajoe](https://twitter.com/hatajoe)  
+Medium [@hatajoe](https://medium.com/@hatajoe)  
 Facebook [Yusuke Hatanaka](https://www.facebook.com/yusuke.hatanaka.351)  
 GitHub [github.com/hatajoe](https://github.com/hatajoe)  
 
