@@ -4,9 +4,8 @@ on:
     branches:
       - "**"
 env:
-  MYSQL_VERSION: '8.0.3'
   DB_USER: 'root'
-  DB_PASS: 'root'
+  DB_PASS: ''
   DB_HOST: '127.0.0.1'
   DB_PORT: 3306
   DB_NAME: 'test'
@@ -16,18 +15,21 @@ jobs:
     strategy:
       matrix:
         go-version: [1.15.x]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0.3-ram
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          MYSQL_DATABASE: ${DB_NAME}
+        ports:
+          - ${DB_PORT}
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     defaults:
       run:
         shell: bash
         working-directory: src
     steps:
-      - uses: mirromutth/mysql-action@v1.1
-        with:
-          mysql version: ${MYSQL_VERSION}
-          mysql database: ${DB_NAME}
-          mysql root password: ${DB_PASS}
       - uses: actions/checkout@v2
       - name: install Go
         uses: actions/setup-go@v2
