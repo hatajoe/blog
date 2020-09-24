@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.3
+    volumes:
+      - binlog:/var/lib/mysql
+      - ./initdb.d:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    env_file:
+     - .env
+    ports:
+     - "3306:3306"
+volumes:
+  binlog:
+    driver: local
