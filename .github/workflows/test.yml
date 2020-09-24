@@ -18,6 +18,10 @@ jobs:
         go-version: [1.15.x]
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+        working-directory: src
     steps:
       - uses: mirromutth/mysql-action@v1.1
         with:
@@ -30,6 +34,6 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
       - name: migrating
-        run: cd src && go run cmd/blog/main.go
+        run: go run cmd/blog/main.go
       - name: testing
         run: go test -race -v ./src/...
