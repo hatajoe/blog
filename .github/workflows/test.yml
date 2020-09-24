@@ -29,6 +29,6 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
       - name: migrating
-        run: go run src/cmd/blog/main.go
+        run: cd src && go run cmd/blog/main.go
       - name: testing
         run: go test -race -v ./src/...
