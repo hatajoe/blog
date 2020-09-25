@@ -36,6 +36,6 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
       - name: migrating
-        run: go run cmd/blog/main.go
+        run: go run cmd/migrate/main.go
       - name: testing
         run: go test -race -v ./...
